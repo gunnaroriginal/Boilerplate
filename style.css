@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+:root {
+  --black: #000000;
+  --green: #00ff00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kode Mono", monospace;
+}
+
+nav * {
+  list-style: none;
+  text-decoration: none;
+  color: var(--green);
+}
+
+body {
+  background-color: var(--black);
+  color: var(--green);
+}
+
+.ascii {
+  color: var(--green);
+  background: var(--black);
+  display: inline-block;
+  white-space: pre;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-family: "Consolas", "BitstreamVeraSansMono", "CourierNew", Courier,
+    monospace;
+  font-size: 12px;
+}
+
+#text {
+  white-space: nowrap;
+  /* overflow: hidden; */
+  width: 100%;
+  animation: type 6s steps(60, end);
+  overflow: hidden;
+}
+
+figure {
+}
+
+figcaption {
+  text-align: center;
+  width: 119%;
+}
+
+#underscore {
+  height: 7px;
+  width: 14px;
+  background-color: var(--green);
+  animation: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    display: inline-block;
+  }
+  50% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+}
+
+#websites figure {
+}
+
+button {
+  border-style: none;
+}
+
+section {
+  width: 50%;
+  position: relative;
+}
+
+.linkGitHub {
+  width: 250px;
+  height: 250px;
+  background-color: #00000000;
+  position: absolute;
+  top: 20px;
+  display: hidden;
+}
+
+p {
+  margin-bottom: 1vw;
+}
