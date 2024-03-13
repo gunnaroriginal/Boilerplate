@@ -18,7 +18,7 @@ function openGitHub() {
 
 // CALCULATE DATE
 let date1 = new Date(Date());
-let date2 = new Date("12/1/2024");
+let date2 = new Date("03/21/2025");
 
 // Calculating the time difference
 // of two dates
@@ -39,10 +39,11 @@ console.log(
     " days"
 );
 
-document.getElementById("techcollegeDaysLeft").innerHTML = "Days left at TECHCOLLEGE: \n" +
-date1.toDateString() +
-" and " +
-date2.toDateString() +
-" is: " +
-Difference_In_Days +
-" days"
+document.getElementById("techcollegeDaysLeft").innerHTML =
+  "Days left at TECHCOLLEGE: \n" +
+  // date1.toDateString() +
+  // " and " +
+  // date2.toDateString() +
+  // " is: " +
+  Difference_In_Days +
+  " days";

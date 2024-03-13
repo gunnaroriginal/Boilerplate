@@ -103,5 +103,9 @@ section {
 }
 
 p {
+}
+
+#about p {
+  margin-left: 1rem;
   margin-bottom: 1vw;
 }
